@@ -108,9 +108,12 @@ class Form:
         tree.heading('# 5',text='مشخصات ناشر')
         #------get all products---------
         n=1
-        for item in self.book:
-            tree.insert('','end',text=str(n),values=(item[0],item[1],item[2],item[3],item[4]))
-            n+=1
+        try:
+            for item in self.book:
+                tree.insert('','end',text=str(n),values=(item[0],item[1],item[2],item[3],item[4]))
+                n+=1
+        except Exception as error:
+            messagebox.showwarning(book_window,message="متاسفانه دسترسی به دیتابیس امکان پذیر نیست")
     def __add_book(self,event):           #ok      
         #-------create new window-------
         add_window=Toplevel(self.main_form)
