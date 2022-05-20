@@ -4,3 +4,14 @@ to run this application
 
 BeCareful******
 you should create Database and table with the code in Database_information file
+
+you must change 
+"C:/Users/MohammadReza/Desktop/13_farvardin" 
+in 
+sys.path.insert(0,"C:/Users/MohammadReza/Desktop/13_farvardin")
+with 
+your own address 
+
+
+my table title:
+Record / help_number / Title / Author / Publishing_Specifications
